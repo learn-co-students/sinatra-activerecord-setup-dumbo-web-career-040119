@@ -4,11 +4,15 @@ source "https://rubygems.org"
 gem 'sinatra'
 gem 'thin'
 gem 'require_all'
-
+gem 'activerecord', '4.2.5'
+gem 'sinatra-activerecord'
+gem 'rake'
 
 group :development do
 	gem 'shotgun'
-	gem 'pry'
+  gem 'pry'
+  gem 'tux'
+	gem 'sqlite3', '~> 1.3.13'
 end
     
 group :test do
@@ -16,3 +20,4 @@ group :test do
   gem 'capybara'
   gem 'rack-test'
 end
+
